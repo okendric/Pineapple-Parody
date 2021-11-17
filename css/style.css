@@ -31,7 +31,7 @@ a {
 }
 
 .logo {
-    position: fixed;
+    position: absolute;
     width: 70px;
     height: 70px;
 }
@@ -148,6 +148,23 @@ a {
     font-size: 40px;
     color: #11590f;
     font-weight: bold;
+}
+
+/* Scroll bars */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #238f23;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3ad33a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #134b13;
 }
 
 /* Media queries */
