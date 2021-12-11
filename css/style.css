@@ -4,6 +4,7 @@
 
 html {
     background-color: #2d7e0e;
+    height: 100%;
 }
 
 /* Navigation */
@@ -19,7 +20,6 @@ a {
     font-weight: bold;
     color: #11590f;
     margin-right: 25px;
-
 }
 
 .navigation {
@@ -62,7 +62,7 @@ a {
     padding-left: 15px;
     left: -200px;
     opacity: 0.00001%;
-    background-color: #2ea82e;
+    background-color: #19a419;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -110,6 +110,7 @@ a {
     width: 600px;
     padding: 50px;
 }
+
 .text {
     color: white;
     font-size: 25px;
@@ -124,15 +125,143 @@ a {
     flex-wrap: wrap;
 }
 
+/* About page content */
+.aboutText {
+    color: #f5df63;
+    font-size: 20px;
+}
+
+.aboutPic {
+    height: 350px;
+    width: 350px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.aboutSub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* Product page images */
+.product1 {
+    height: 350px;
+    width: 300px;
+    bottom: -200px;
+    cursor: pointer;
+    z-index: 98;
+}
+
+.product2 {
+    height: 350px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.product3 {
+    height: 350px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.product4 {
+    height: 350px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.product5 {
+    height: 350px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.wrappercenter {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.wrapper1 {
+    height: 350px;
+    width: 300px;
+    background-color: #c5c5c5;
+    bottom: -100px;
+    z-index: 97;
+    transition: 1s;
+    /*opacity: 0.000001%;*/
+}
+
+.productBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 700px;
+    z-index: 99;
+}
+
+.productText {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
 .yellow {
     color: #f5df63;
-    font-weight: bold;
 }
 
 .green {
     color: #3ad33a;
-    font-weight: bold;
 }
+
+.red {
+    color: #880e0e;
+}
+
+.blue {
+    color: #063b8d;
+}
+
+.purple {
+    color: rebeccapurple;
+}
+
+/* Contact Page */
+.formSize {
+    margin-top: 500px;
+}
+
+label {
+    font-size: 50px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.button {
+    height: 50px;
+    width: 100px;
+}
+
+.social {
+    font-size: 20px;
+    color: yellow;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.pic {
+    height: 200px;
+    width: 200px;
+}
+
 
 /* Footer */
 .footer {
@@ -144,6 +273,7 @@ a {
     display: flex;
     justify-content: center;
 }
+
 .foot {
     font-size: 40px;
     color: #11590f;
@@ -168,7 +298,7 @@ a {
 }
 
 /* Media queries */
-@media screen and (min-width: 761px) {
+@media screen and (min-width: 771px) {
     .menuIcon {
         display: none;
     }
@@ -180,16 +310,14 @@ a {
     }
 }
 
-@media screen and (max-width: 760px) {
-    .navigation {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 770px) {
     .splashtext {
         font-size: 37px;
         -webkit-text-stroke: 2px #000000;
+    }
+
+    .navigation {
+        display: none;
     }
 }
 
